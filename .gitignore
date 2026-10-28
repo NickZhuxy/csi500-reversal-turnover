@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.env
+.env.*
+data/
+runs/
+dist/
+.DS_Store
+
+# Private planning and interview notes; never published
+private/

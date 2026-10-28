@@ -1,0 +1,67 @@
+{
+  "data_dir": "data",
+  "runs_dir": "runs",
+  "splits": {
+    "dev": {
+      "start": "2018-01-02",
+      "end": "2024-12-31",
+      "label_end": "2024-12-31"
+    },
+    "oos_a": {
+      "start": "2025-01-02",
+      "end": "2025-12-31",
+      "label_end": "2025-12-31"
+    },
+    "oos_b": {
+      "start": "2026-01-05",
+      "end": "2026-09-30",
+      "label_end": "2026-10-26"
+    }
+  },
+  "horizons": [
+    1,
+    5,
+    20
+  ],
+  "lookback": 20,
+  "min_traded_days": 15,
+  "min_listed_days": 60,
+  "min_names": 100,
+  "mad_k": 5.0,
+  "min_industry_size": 5,
+  "n_quantiles": 5,
+  "cost_bps": 20.0,
+  "stress_cost_bps": 40.0,
+  "trading_days_per_year": 242,
+  "capacity_participation": 0.05,
+  "primary_signal": "RxT",
+  "primary_version": "neutral",
+  "primary_horizon": 20,
+  "stale_membership_window": [
+    "2022-12-12",
+    "2023-03-17"
+  ],
+  "comparable_subperiod": [
+    "2023-01-01",
+    "2024-12-31"
+  ],
+  "all_stale_membership_windows": [
+    [
+      "2021-06-15",
+      "2021-07-16"
+    ],
+    [
+      "2021-12-13",
+      "2022-01-14"
+    ],
+    [
+      "2022-12-12",
+      "2023-03-17"
+    ]
+  ],
+  "confirmatory_secondary": {
+    "signal": "LOWTURN20",
+    "version": "neutral",
+    "horizon": 20
+  }
+}
